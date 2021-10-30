@@ -28,8 +28,6 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
                     <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('Colores')}}"   ><i class="fas fa-atlas"></i> Paleta de Colores </a>
-                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('create')}}"   ><i class="fas fa-atlas"></i> subir imagen </a>
-                    <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="#"   ><i class="fas fa-atlas"></i> Registro Cliente </a>
 
                 </div>
             <li class="nav-item dropdown  "  >
@@ -37,7 +35,18 @@
                     Mostrar Datos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
-                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="#"   ><i class="fas fa-atlas"></i> Hoteles Registrados </a>
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrar')}}"   ><i class="fas fa-atlas"></i> Fotos Subidas </a>
+
+
+                </div>
+            <li class="nav-item dropdown  "  >
+                <a style="color:white" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registrar')}}"   ><i class="fas fa-atlas"></i> Registrarse </a>
+
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="#"   ><i class="fas fa-atlas"></i> Iniciar Sección </a>
 
 
                 </div>

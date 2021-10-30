@@ -18,5 +18,21 @@ Route::get('/', function () {
 });
 Route::get('/home/Welcome',[\App\Http\Controllers\PaginasController::class,'Welc'])->name('welcome');
 Route::get('home/Colores',[\App\Http\Controllers\PaginasController::class,'colores'])->name('Colores');
-Route::get('home/subir',[\App\Http\Controllers\PaginasController::class,'creare'])->name('create');
+Route::get('home/subir',[\App\Http\Controllers\PaginasController::class,'create'])->name('create');
+Route::get('/formulario\register', [\App\Http\Controllers\PaginasController::class, 'registrar'])->name('registrar');
+Route::post('/formulario',[\App\Http\Controllers\PaginasController::class,'guardar'])->name('guardar');
+Route::get('/registro\colores',[\App\Http\Controllers\PaginasController::class,'colores'])->name('registrarcolor');
+Route::post('/formulario\color',[\App\Http\Controllers\PaginasController::class,'guardarcolor'])->name('guardarcolor');
+Route::post('/Registrarfoto', [\App\Http\Controllers\PaginasController::class, 'createfoto'])->name('registrarfoto');
+Route::get('/mostrar', [\App\Http\Controllers\PaginasController::class, 'mostrar'])->name('mostrar');
 
+Route::resource('/admin/files','Admin\FileController');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
